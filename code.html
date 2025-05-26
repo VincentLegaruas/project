@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Desain Peta Dunia - Atlantis Kota Hilang</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #006064;
+    margin-bottom: 10px;
+  }
+  svg {
+    display: block;
+    margin: auto;
+    background: #b2ebf2;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  .location {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .location:hover {
+    transform: scale(1.1);
+  }
+  .loc-circle {
+    fill: #00796b;
+    stroke: #004d40;
+    stroke-width: 3;
+  }
+  .loc-text {
+    font-size: 12px;
+    fill: #004d40;
+    pointer-events: none;
+    font-weight: 700;
+  }
+  .path-line {
+    stroke: #004d40;
+    stroke-width: 2;
+    fill: none;
+  }
+  .tooltip {
+    font-size: 12px;
+    font-weight: 600;
+    fill: #fff;
+  }
+</style>
+</head>
+<body>
+
+<h1>Desain Peta Dunia<br>Atlantis Kota Hilang</h1>
+
+<svg width="900" height="700" viewBox="0 0 900 700" aria-label="Map Design Atlantis Kota Hilang" role="img">
+
+  <!-- Paths connecting locations -->
+  <path class="path-line" d="M 450 80 L 450 180 L 450 270 L 340 360 L 200 400 L 150 460" />
+  <path class="path-line" d="M 450 180 L 600 270 L 700 370" />
+  <path class="path-line" d="M 150 460 L 300 480 L 400 560" />
+  <path class="path-line" d="M 600 270 L 600 350 L 700 400" />
+  <path class="path-line" d="M 700 370 L 760 450 L 720 580" />
+  <path class="path-line" d="M 150 460 L 75 550" />
+  <path class="path-line" d="M 75 550 L 100 600 L 200 600" />
+  <path class="path-line" d="M 400 560 L 550 630 L 600 580" />
+
+  <!-- Locations circles and labels -->
+  <!-- Puncak Gunung Tertinggi -->
+  <g class="location" tabindex="0" role="button" aria-label="Puncak Gunung Tertinggi - Leyak Bayangan, Sang Garuda">
+    <circle class="loc-circle" cx="450" cy="80" r="25" />
+    <text class="loc-text" x="450" y="85" text-anchor="middle">Puncak Gunung</text>
+  </g>
+
+  <!-- Gunung Berapi -->
+  <g class="location" tabindex="0" role="button" aria-label="Gunung Berapi Aktif - Raja Singa, Kala Api">
+    <circle class="loc-circle" cx="450" cy="180" r="22" />
+    <text class="loc-text" x="450" y="185" text-anchor="middle">Gunung Berapi</text>
+  </g>
+
+  <!-- Sungai Besar -->
+  <g class="location" tabindex="0" role="button" aria-label="Sungai Besar - Lembuswana">
+    <circle class="loc-circle" cx="600" cy="270" r="20" />
+    <text class="loc-text" x="600" y="275" text-anchor="middle">Sungai Besar</text>
+  </g>
+
+  <!-- Hutan Bali Le bat -->
+  <g class="location" tabindex="0" role="button" aria-label="Hutan Bali Le bat - Barong, Harimau Kencana">
+    <circle class="loc-circle" cx="340" cy="360" r="23" />
+    <text class="loc-text" x="340" y="365" text-anchor="middle">Hutan Bali</text>
+  </g>
+
+  <!-- Desa Terpencil -->
+  <g class="location" tabindex="0" role="button" aria-label="Desa Terpencil - Wewe Gombel, Rangda Bayangan, Sundel Bolong Raja">
+    <circle class="loc-circle" cx="150" cy="460" r="20" />
+    <text class="loc-text" x="150" y="465" text-anchor="middle">Desa Terpencil</text>
+  </g>
+
+  <!-- Desa Awal Raka -->
+  <g class="location" tabindex="0" role="button" aria-label="Desa Awal Raka - Titik Mulai Petualangan">
+    <circle class="loc-circle" cx="200" cy="400" r="18" />
+    <text class="loc-text" x="200" y="405" text-anchor="middle">Desa Awal</text>
+  </g>
+
+  <!-- Pantai Selatan -->
+  <g class="location" tabindex="0" role="button" aria-label="Pantai Selatan - Nyi Roro Kidul">
+    <circle class="loc-circle" cx="600" cy="350" r="22" />
+    <text class="loc-text" x="600" y="355" text-anchor="middle">Pantai Selatan</text>
+  </g>
+
+  <!-- Gua Bawah Laut -->
+  <g class="location" tabindex="0" role="button" aria-label="Gua Bawah Laut - Jenglot Hitam">
+    <circle class="loc-circle" cx="700" cy="400" r="20" />
+    <text class="loc-text" x="700" y="405" text-anchor="middle">Gua Bawah Laut</text>
+  </g>
+
+  <!-- Kerajaan Majapahit -->
+  <g class="location" tabindex="0" role="button" aria-label="Kerajaan Majapahit - Ratu Majapahit">
+    <circle class="loc-circle" cx="100" cy="600" r="25" />
+    <text class="loc-text" x="100" y="605" text-anchor="middle">Majapahit</text>
+  </g>
+
+  <!-- Kota Atlantis -->
+  <g class="location" tabindex="0" role="button" aria-label="Kota Atlantis yang Hilang">
+    <circle class="loc-circle" cx="600" cy="580" r="30" />
+    <text class="loc-text" x="600" y="585" text-anchor="middle">Atlantis</text>
+  </g>
+
+</svg>
+
+<div style="max-width: 900px; margin: 20px auto; padding: 10px; background: #004d40; color: white; border-radius: 12px; font-size: 14px; line-height: 1.6;">
+  <h2>Informasi Lokasi</h2>
+  <ul>
+    <li><strong>Puncak Gunung Tertinggi:</strong> Tempat ujian Sang Garuda dan Leyak Bayangan. Udara dingin dan badai seringkali menghalangi.</li>
+    <li><strong>Gunung Berapi Aktif:</strong> Markas Raja Singa dan Kala Api dengan medan lava dan batu panas.</li>
+    <li><strong>Sungai Besar:</strong> Sungai berbahaya yang dijaga Lembuswana, menghubungkan hutan dan gunung.</li>
+    <li><strong>Hutan Bali Le bat:</strong> Rute penuh misteri dengan Barong dan Bos Harimau Kencana.</li>
+    <li><strong>Desa Terpencil:</strong> Lokasi Wewe Gombel dan bos gelap, jalan rahasia berliku dan berkabut.</li>
+    <li><strong>Desa Awal Raka:</strong> Titik awal petualangan dan tutorial untuk Raka.</li>
+    <li><strong>Pantai Selatan:</strong> Rumah Nyi Roro Kidul dengan jalur bawah laut ke Gua Bawah Laut.</li>
+    <li><strong>Gua Bawah Laut:</strong> Lokasi boss tersembunyi Jenglot Hitam yang penuh teka-teki air.</li>
+    <li><strong>Kerajaan Majapahit:</strong> Kota kuno penuh sejarah dan terakhir sebelum membuka Atlantis.</li>
+    <li><strong>Kota Atlantis yang Hilang:</strong> Lokasi puncak petualangan dengan teka-teki dan rahasia magis.</li>
+  </ul>
+</div>
+
+</body>
+</html>
+
